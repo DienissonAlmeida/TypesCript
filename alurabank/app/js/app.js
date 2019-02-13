@@ -1,2 +1,2 @@
-const negociacao = new Negociacao(new Date(),1,1);
-console.log(negociacao);
+const negociacao = new Negociacao(new Date(), 1, 1);
+console.log(negociacao.quantidade);

@@ -1,9 +1,8 @@
+export abstract class BaseView<T>{
 
-abstract class BaseView<T>{
+    protected _element: JQuery;
 
-    protected _element : JQuery;
-
-    constructor(selector: string){
+    constructor(selector: string) {
         this._element = $(selector);
     }
 
@@ -11,5 +10,6 @@ abstract class BaseView<T>{
         this._element.html(this.template(model));
     }
 
-    abstract template(model : T) : string;
+    abstract template(model: T): string;
 }
+
